@@ -1,0 +1,30 @@
+@charset "UTF-8"; 
+
+
+
+/*Asterisco significa as configuracoes de todo o css e igual ao bodyt do html*/
+*{  
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    /*Background image e para alocar uma iagem utilizamos o parametro linear gradient que conseguimos fzer um degrade de como como se fosse uma iamage, e oparametor de como sera pdoe ser da forma que voce ddeseja*/
+    background-image: linear-gradient(to right, #DAFDBA, #9AEBA3);
+}
+
+/*O main significa o conteudo principal da pagina html, tipos os titulos etc..*/
+main{
+
+    background-color: white; /*cor do fundo*/
+    box-shadow: 5px 5px 15px #045a85c1; /*Sombras*/
+    border-radius: 15px; /*bordas arredondadas*/
+    width: 600px; /*largura do main*/
+    padding: 10px; /*largura interna das margens*/
+    margin:auto; /*largura externa da margem ,que fica auto para se adtpar a tudo, e sempre centralizada*/
+    }
+
+h1{color: #13678A;}
+h2{color: #012030;}
+
+p{ text-align: justify;}

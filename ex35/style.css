@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+#carro {
+    font-family: 'Times New Roman', Times, serif;
+    color: darkblue;
+    background-color: bisque;
+    padding: 2px;
+    border: 2px solid rgb(142, 249, 249);
+    margin: 50px auto 10px auto;
+    text-align: center;
+    width: 400px;
+    height: 200px;
+}
+
+#moto {
+    font-family: 'Times New Roman', Times, serif;
+    color: darkblue;
+    background-color: bisque;
+    
+}
+
+#van {
+    font-family: 'Times New Roman', Times, serif;
+    color: darkblue;
+    background-color: bisque
+
+}
+
+#Caminhão {
+    font-family: 'Times New Roman', Times, serif;
+    color: darkblue;
+    background-color: bisque
+}
+
+.paragrafos {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 2em;
+    background-color: paleturquoise;
+    padding: 5px;
+    border: 2px solid blue;
+    margin: 10px 10px 10px 10px; 
+    
+}

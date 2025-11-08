@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste HTML</title>
+    <style>
+
+        .titulo1{
+            background-color: rgba(178, 246, 246, 0.912);
+            border: 2px solid black;
+            height: 199px;
+            margin: 1px 50px 12px 40px;
+            padding: 5px;
+            outline: 1px solid blue;
+            border-radius: 5px;
+        }
+
+        #paragrafo1:hover {
+            color: red;
+        }
+
+        #paragrafo2:hover {
+            color: violet;
+        }
+
+        .titulo1::after {
+            content: " (Pseudo Elemento Teste)";
+        }
+
+        .titulo1:hover::before {
+            content: "Elemento Escondido ";
+        }
+
+        div:hover>p {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="titulo1">Titulo Primario</h1>
+    <h1 class="titulo1">Titulo Primario Segundario</h1>
+
+    <p id="paragrafo1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum vero asperiores perferendis
+        sit nisi excepturi, repudiandae doloremque nemo, odit possimus amet ea aperiam explicabo aspernatur ad nulla
+        sapiente ducimus! Hic.</p>
+
+    <p id="paragrafo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem alias voluptatum iure dolore
+        asperiores quo inventore voluptas incidunt odio consectetur at molestiae consequuntur, doloribus accusantium
+        rerum, laudantium excepturi possimus itaque.</p>
+
+    <div>
+        <h1>Teste Filho
+        </h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia provident esse sit minima ratione eius
+            neque aliquam blanditiis fuga tempore dignissimos possimus consequatur velit ducimus, iure quo, quas ea
+            distinctio?</p>
+    </div>
+
+    <a href="https://www.youtube.com/" target="_blank">Clique e vá para o youtube</a>
+
+</body>
+
+</html>

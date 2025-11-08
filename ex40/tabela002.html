@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+
+        }
+
+        td,
+        th {
+            border: 1px solid black
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot{
+            background-color: lightslategray;
+            color: white;
+        }
+
+        /*nth-child e uma pseudo class onde o objetivo dela e selecionar elementos, e a logica você que constroi, neste caso utilizamos para fazer efeito zebrado, a cada 1 linha aparece o efeito.*/
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+
+        }
+
+        thead th{    
+             position: sticky;
+             top: 0;
+             background-color: lightslategray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Table e literalmente a tabela-->
+    <table>
+
+        <!--thead e o cabeçalho da tabela-->
+        <caption>População Mundial</caption>
+
+        <!--tbody e o conteudo da tabelas-->
+        <!--tfoot e o rodape da tabela-->
+
+        <!--Funcoes que utilizamos na tabela:
+        tr: literalmente a linha da tabela
+        th: sao titulos na tabela
+        td: são os dados da tabela
+        -->
+        
+
+        <!--Scope visa dizer o escopo das linhas, funcionaldiades:
+
+        col: visa falar que os dados logo a baixo pertence a ele, e sempre colocamos ele em um th.
+        row: ele visa falar que o cabeçalho daquela linha  são referentes ao titulo. Colocamos esse parametro em um th tambem-->
+
+
+        <!--A diferenca do th para o caption e que o th sao titulos que se repetem na tabela, para representar os dados, ja o caption e literalmente o titulo principal da tabela ou legenda-->
+
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">Populacao</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Sao Paulo</td>
+                <td>49 919 049</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio De Janeiro</td>
+                <td>17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>14 136 417</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td>11 443 208</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td>10 880 506</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td>9 058 155</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>8 791 688</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td>8 116 132</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td>7 609 601</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td>7 055 228</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td>6 775 152</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td>3 974 495</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td>3 941 175</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td>3 833 486</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td>3 658 813</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td>3 302 406</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td>3 269 200</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td>3 127 511</td>
+            </tr>
+
+
+        </tbody>
+
+        <tfoot>
+
+            <tr>
+                <th scope="row">Total De Habitantes</th>
+                <td>00000</td>
+            </tr>
+
+        </tfoot>
+    </table>
+
+</body>
+
+</html>

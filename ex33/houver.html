@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>houver</title>
+
+    <style>
+
+        /* O SELETOR > SIGNIFICA QUE DETERMIANDA COISA E FILHO DELA, ISSO PODE SER UTIL EM CASOS PARA CASOS, PARA FAZER UM MENUZINHO, OU ATE MESMO PARA APLICAR UM ESTILO, VAI A DEPENDER DE SUA CRIATIVIDADE*/
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        div:hover {
+            color: red
+        }
+
+        /*este > significa filho, p e filho de div*/
+        div>p {
+
+            /*Display e uma propriedade em css, que define como o documento deve ser exibido, none e ficar escondido*/
+            display: none;
+        }
+
+        div:hover>p {
+
+            /*ocupa a linha de baixo, e exibi a mensagem que esta escondida na determianda tag que estava escondida, ou pode acontecer de tambem nao estar escondida*/
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Exemplo de houver</h1>
+    <p>passe o mouse sobre o texto a baixo</p>
+    <div>passe o mouse aqui
+        <p>paragrafo escondido</p>
+    </div>
+
+</body>
+
+</html>

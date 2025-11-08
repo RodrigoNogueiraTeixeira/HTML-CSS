@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            /*Esta tag text-decoration serve para adicionarmos ou remover riscos de uam determinada tag, ela possui outros parametros tambem*/
+        }
+
+        /*e uma funcao da pseudos classes, quando um link for acesso vai ficar na cor vermelha*/
+        a:visited{
+            color: darkred;
+        }
+
+        /*hover ja vi, e para quando passar mouse sobre algo fazer determinada acao*/
+        a:hover{
+            color: black;
+            text-decoration: underline;
+            /*underline e para colocar um risco embaixo do link*/
+        }
+
+        /*active e para quando clicar no link, ele ficar azul*/
+        a:active{
+            color: blue;
+        }
+
+        /*PSEUDO ELEMENTOS*/
+        /*o after e para adicionar algo depois do link, e o before e para adicionar algo antes do link*/
+        a::after{
+            content: " (link externo)";
+            color: orange;
+        }
+        .especial::after{
+            content: " (link especial)";
+            color: green;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositorio github</a></li>
+        <li><a class="especial" href="https://youtube.com/cursoemvideo/">canal do youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com">site do cursoemvideo</a></li>
+    </ul>
+
+</body>
+
+</html>

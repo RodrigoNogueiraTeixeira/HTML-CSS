@@ -1,0 +1,38 @@
+@charset "UTF - 8";
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+    font-family: 'Fonte doida';
+    src: url(oups/Oups.otf);
+}
+
+h1 {
+    color: #247BA0;
+    font-family: 'Feling';
+}
+
+h2,
+p,
+ul,
+ol {
+    color: white;
+}
+
+body {
+    background-image: linear-gradient(to right, #DDA3B2, #EAF4D3);
+}
+
+main {
+    
+    font-size: 25px;
+    margin: auto;
+    width: 1000px;
+    background-color: #FE5F00;
+    border-radius: 10px;
+    text-align: justify;
+    box-shadow: 5px 5px 10px #732C2C;
+
+}
